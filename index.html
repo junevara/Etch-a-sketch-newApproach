@@ -7,28 +7,34 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h1 class="heading">Etch a Sketch</h1>
+        <div class="container-top">
+            <h1 class="heading">Etch a Sketch</h1>
         
-        <div class = "container">
-            <div class="grid-options">
-                <button class="clear" type="button">Clear</button>
-                <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
-            </div>  
-            <div class="container-wrapper"> 
-                <div class = "draw-area">
-                    <p>Hello</p>
+            <div class = "container">
+                <div class="grid-options">
+                    <button class="clear" type="button">Clear</button>
+                    <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
+                </div>  
+                <div class="container-wrapper"> 
+                    <div class = "draw-area">
+                        <p>Hello</p>
+                    </div>
+                </div>    
+                <div class="buttons">
+                    <button class="color-choice" data-color="black" type="button">Black</button>
+                    <button class="color-choice" data-color="rainbow" type="button">Rainbow</button>
+                    <button class="color-choice" data-color="gray" type="button">Gray Scale</button>
+                    <button class="color-choice" data-color="eraser" type="button">Eraser</button>
+                    <button class="color-choice">Pick: <input type="color" value="#ff0000" id="input-color"></button>
                 </div>
-            </div>    
-            <div class="buttons">
-                <button class="color-choice" data-color="black" type="button">Black</button>
-                <button class="color-choice" data-color="rainbow" type="button">Rainbow</button>
-                <button class="color-choice" data-color="gray" type="button">Gray Scale</button>
-                <button class="color-choice" data-color="eraser" type="button">Eraser</button>
-                <button class="color-choice">Pick: <input type="color" value="#ff0000" id="input-color"></button>
-            </div>
+                
             
-        
+            </div>
+        </div>    
+        <div class="footer">
+            <p>This project is part of <a
+                href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project">The Odin
+                Project Curriculum</a></p>
         </div>
-        <div class="footer"></div>
     </body>
 </html>
