@@ -1,1 +1,105 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
 
+html {
+    background: url('./background.png') bottom center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+html , body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+h1.heading {
+    text-align: center;
+    color: white;
+   
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+a {
+    color: yellow;
+}
+
+.container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.grid-options, .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-options {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.buttons {
+    gap: 20px;
+}
+
+.container-wrapper {
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    background: linear-gradient(45deg, #aaaaaa 0 50%, #75757b 50% 100%);
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.draw-area {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+.draw-area p {
+    margin: 0;
+}
+
+.slider {
+    transform: rotate(270deg) translateX(100px);
+    
+}
+
+button {
+    
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px;
+    color: white;
+    line-height: 27px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid red;
+}
