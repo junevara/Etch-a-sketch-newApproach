@@ -13,11 +13,16 @@
             <div class = "container">
                 <div class="grid-options">
                     <button class="clear" type="button">Clear</button>
-                    <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
+                    <div class="size-container">
+                        <p class="left">Pixel Size</p>
+                        <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
+                        <p class="right">Small to Large</p>
+                    </div>  
+                    <div>Grid: <span id="display"></span></div>  
                 </div>  
                 <div class="container-wrapper"> 
                     <div class = "draw-area">
-                        <p>Hello</p>
+                        
                     </div>
                 </div>    
                 <div class="buttons">
@@ -36,5 +41,6 @@
                 href="https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project">The Odin
                 Project Curriculum</a></p>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
