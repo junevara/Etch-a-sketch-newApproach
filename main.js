@@ -18,22 +18,17 @@ function createGrid (gridNumber) {
         drawArea.insertAdjacentElement('beforeend', gridItem);
     } 
     let gridPixels = drawArea.querySelectorAll('div');
-    gridPixels.forEach(gridPixel => gridPixel.addEventListener('mousedown', () => {mouseDown = true}));
-    gridPixels.forEach(gridPixel => gridPixel.addEventListener('mouseup',  () => [mouseDown = false]));
+    
     gridPixels.forEach(gridPixel => gridPixel.addEventListener('mouseover', colorGrid));
    
 }
 
-
-
-
+drawArea.addEventListener('mousedown', () => mouseDown = true);
+drawArea.addEventListener('mouseup', () => mouseDown = false);
 
 
 function colorGrid(e) {
-    if(e.type === 'mouseover' && !mouseDown){ 
-        return;
-    }
-    else {
+    if(mouseDown && e.type === 'mouseover'){
         switch (color) {
             case 'rainbow':
                 this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
@@ -66,7 +61,12 @@ function colorGrid(e) {
                 break;
         } 
     }
+    else {
+        return;
+    }
 }
+
+
 
 function eraseAllColor() {
     var gridPixels = drawArea.querySelectorAll('div');
